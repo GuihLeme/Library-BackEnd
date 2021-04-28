@@ -10,6 +10,7 @@
 ## Features:
 * Cadastrar usuários que podem emprestar mais de um livro;
 * Cadastrar livros que poderão ser emprestados;
+* Cadastrar novo empréstimo;
 * Mostrar empréstimos ativos, lembrando quantas devoluções deverão ser realizadas ao longo da semana atual;
 
 ## Comandos: 
