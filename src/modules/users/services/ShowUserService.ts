@@ -17,7 +17,6 @@ class ShowUserService {
 
   public async execute({user_id}: IRequest): Promise<User> {
     const checkUserExists = await this.usersRepository.findById(user_id)
-    console.log(user_id)
 
     if(!checkUserExists) {
       throw new Error('Usuário não encontrado')

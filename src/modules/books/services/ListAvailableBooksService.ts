@@ -19,7 +19,6 @@ class ListAvailableBooksService {
     }
 
     const availableBooks = booksList.filter(isAvailable);
-    console.log(availableBooks)
 
 
     return availableBooks

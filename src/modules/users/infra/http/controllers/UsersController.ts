@@ -28,10 +28,8 @@ export default class UsersController {
     const { user_id } = request.params
 
     const showUser = container.resolve(ShowUserService)
-    console.log(showUser)
 
     const user = await showUser.execute({user_id})
-    console.log(user)
 
 
     return response.json(user);
@@ -52,7 +50,6 @@ export default class UsersController {
     const updateUser = container.resolve(UpdateUserService)
 
     const updatedUser = await updateUser.execute({ user_id, name, email, phone })
-    console.log(updatedUser)
 
     return response.json(updatedUser);
   }

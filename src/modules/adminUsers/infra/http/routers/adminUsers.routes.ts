@@ -26,6 +26,5 @@ adminUsersRouter.post('/', async (request, response) => {
   return response.json(adminUserWithoutPassword);
 })
 
-
 export default adminUsersRouter;
 
